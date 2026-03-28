@@ -2,78 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet the Vaughn's</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Darius & Tyler Vaughn</title>
 
   <style>
-    /* 🌻 Sunflower Gradient Background */
     body {
-      background: linear-gradient(
-        to bottom,
-        #fce570,
-        hsl(44, 92%, 63%),
-        #e0a526,
-        #8b5e1a,
-        #3f7d20
-      );
-      background-attachment: fixed;
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #222;
+      font-family: Georgia, serif;
+      background: linear-gradient(to bottom, #fff8ec, #f5e6c8);
+      color: #4b3a2f;
       text-align: center;
-      padding-bottom: 40px;
     }
 
-    /* 🌼 Full Page Sunflower Frame */
-    .page-frame {
-      border: 18px solid #f7c948;
-      border-radius: 20px;
-      margin: 20px;
+    h1 {
+      font-size: 3rem;
+      margin-top: 40px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 30px auto;
       padding: 20px;
-      box-shadow: 0 0 25px rgba(0,0,0,0.4);
-      background: rgba(255,255,255,0.15);
-    }
-
-    /* Fade‑in animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    h1, h2 {
-      animation: fadeIn 1.5s ease forwards;
-    }
-
-    .story {
-      animation: fadeIn 2s ease forwards;
-    }
-
-    /* 🌻 Sunflower Border for Slideshow */
-    .sunflower-border {
-      border: 12px solid #f7c948;
+      background: rgba(255,255,255,0.9);
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-      padding: 10px;
-      background: white;
-      animation: fadeIn 2.5s ease forwards;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
-    /* Slideshow Container */
+    .video iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+      border-radius: 10px;
+    }
+
+    /* Countdown */
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      min-width: 80px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .number {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    /* Slideshow */
     .slideshow-container {
       position: relative;
       max-width: 700px;
-      margin: 30px auto;
+      margin: auto;
     }
 
     .slide {
       display: none;
-      opacity: 0;
-      transition: opacity 1.2s ease-in-out;
-    }
-
-    .slide.active {
-      display: block;
-      opacity: 1;
     }
 
     .slide img {
@@ -81,182 +78,142 @@
       border-radius: 10px;
     }
 
+    .active {
+      display: block;
+    }
+
     .prev, .next {
       cursor: pointer;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      padding: 12px;
+      padding: 10px;
       color: white;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
       background: rgba(0,0,0,0.5);
-      border: none;
       border-radius: 50%;
+      transform: translateY(-50%);
     }
 
-    .prev { left: 15px; }
-    .next { right: 15px; }
+    .prev { left: 10px; }
+    .next { right: 10px; }
 
     .prev:hover, .next:hover {
       background: rgba(0,0,0,0.8);
-    }
-
-    /* Story Box */
-    .story {
-      max-width: 900px;
-      margin: 20px auto;
-      background: rgba(255,255,255,0.85);
-      padding: 20px;
-      border-radius: 10px;
-      line-height: 1.6;
-      font-size: 18px;
-    }
-
-    /* Play Music Button */
-    .music-btn {
-      background: #f7c948;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: 0.3s;
-    }
-
-    .music-btn:hover {
-      background: #e0a526;
-      transform: scale(1.05);
     }
   </style>
 </head>
 
 <body>
 
-<div class="page-frame">
-
-  <!-- 🎥 Small Visible YouTube Player -->
-  <div style="text-align:center; margin-top:20px;">
-  <iframe
-    width="320"
-    height="180"
-    src="https://www.youtube.com/embed/VAisMKo6DJw?autoplay=1&mute=1"
-    title="Angel by Valentino"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-  <p style="font-size:14px; color:#333; margin-top:8px;">Unmute the video if needed</p>
-</div>
-
-
-
   <h1>Darius & Tyler Vaughn</h1>
-  <hr>
-  <h2>The Love Story</h2>
-  <hr>
+  <p class="subtitle">A love that found its way back ❤️</p>
 
-  <!-- ❤️ Full Intro Paragraph -->
-  <div class="story">
-    <p>Tyler and Darius met in September 2015 at Eastern Michigan University in an Audio Engineering class. At the time, both were studying Electronic Media. Darius majored in Communications and chose Electronic Media as his minor, while Tyler majored in Electronic Media and minored in Theater. What started as a simple class connection quickly grew into something more as they spent time together and got to know each other.</p>
-
-    <p>During their time at Eastern, they dated and fell in love. Their connection was real and meaningful, but at that point in their lives it simply wasn’t their time, and they eventually went their separate ways.</p>
-
-    <p>In 2021, God reconnected them. What felt like a chance reconnection quickly made it clear that their story wasn’t finished. With more life experience, growth, and faith, they were able to come back together in a way that was stronger and more intentional than before.</p>
-
-    <p>On May 30, 2021, Darius asked Tyler to be his girlfriend, beginning a new chapter in their relationship. Since then, they have continued to grow together, falling more in love with each passing year.</p>
-
-    <p>On January 18, 2026, Darius asked Tyler to be his wife, marking the beginning of the next chapter in a love story that has always found its way back to each other.</p>
+  <!-- 🎵 YouTube Music -->
+  <div class="section video">
+    <h2>Our Song</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/VAisMKo6DJw?autoplay=1&mute=1"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+    <p>Unmute to hear our song</p>
   </div>
 
-  <!-- 🌻 Slideshow With Sunflower Border -->
-  <div class="sunflower-border">
+  <!-- 💍 Countdown -->
+  <div class="section">
+    <h2>Countdown to Our Wedding 💍</h2>
+    <div class="countdown">
+      <div class="box"><div class="number" id="days">00</div>Days</div>
+      <div class="box"><div class="number" id="hours">00</div>Hours</div>
+      <div class="box"><div class="number" id="minutes">00</div>Minutes</div>
+      <div class="box"><div class="number" id="seconds">00</div>Seconds</div>
+    </div>
+  </div>
+
+  <!-- ❤️ Love Story -->
+  <div class="section">
+    <h2>Our Love Story</h2>
+    <p>
+      Tyler and Darius met in September 2015 at Eastern Michigan University in an Audio Engineering class.
+      What started as a simple connection turned into something unforgettable.
+    </p>
+
+    <p>
+      Life took them on separate paths for a time, but their story wasn’t finished.
+      In 2021, they found their way back to each other stronger, wiser, and more in love.
+    </p>
+
+    <p>
+      On May 30, 2021, their new chapter began.  
+      On January 18, 2026, Darius asked Tyler to be his wife.  
+      And now, forever begins.
+    </p>
+  </div>
+
+  <!-- 📸 Slideshow -->
+  <div class="section">
+    <h2>Our Memories</h2>
+
     <div class="slideshow-container">
 
-     <div class="slide active">
-  <img src="./IMG_3687.jpeg" alt="Photo 1">
-</div>
+      <div class="slide active"><img src="./IMG_3687.jpeg"></div>
+      <div class="slide"><img src="./IMG_3492.jpeg"></div>
+      <div class="slide"><img src="./IMG_3486.jpeg"></div>
+      <div class="slide"><img src="./IMG_6883.jpeg"></div>
+      <div class="slide"><img src="./IMG_6885.jpeg"></div>
+      <div class="slide"><img src="./IMG_6886.jpeg"></div>
+      <div class="slide"><img src="./IMG_6894.jpeg"></div>
+      <div class="slide"><img src="./IMG_9188.jpeg"></div>
+      <div class="slide"><img src="./IMG_1307.jpeg"></div>
+      <div class="slide"><img src="./IMG_1309.jpeg"></div>
+      <div class="slide"><img src="./IMG_1310.jpeg"></div>
+      <div class="slide"><img src="./IMG_1312.jpeg"></div>
 
-<div class="slide">
-  <img src="./IMG_3492.jpeg" alt="Photo 2">
-</div>
-
-<div class="slide">
-  <img src="./IMG_3486.jpeg" alt="Photo 3">
-</div>
-
-<div class="slide">
-  <img src="./IMG_6883.jpeg" alt="Photo 4">
-</div>
-
-<div class="slide">
-  <img src="./IMG_6885.jpeg" alt="Photo 5">
-</div>
-
-<div class="slide">
-  <img src="./IMG_6886.jpeg" alt="Photo 6">
-</div>
-
-<div class="slide">
-  <img src="./IMG_6894.jpeg" alt="Photo 7">
-</div>
-
-<div class="slide">
-  <img src="./IMG_9188.jpeg" alt="Photo 8">
-</div>
-
-<div class="slide">
-  <img src="./IMG_1307.jpeg" alt="Photo 9">
-</div>
-
-<div class="slide">
-  <img src="./IMG_1309.jpeg" alt="Photo 10">
-</div>
-
-<div class="slide">
-  <img src="./IMG_1310.jpeg" alt="Photo 11">
-</div>
-
-<div class="slide">
-  <img src="./IMG_1312.jpeg" alt="Photo 12">
-</div>
-
-      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      <span class="prev" onclick="changeSlide(-1)">❮</span>
+      <span class="next" onclick="changeSlide(1)">❯</span>
 
     </div>
   </div>
 
-</div> <!-- end page frame -->
+  <script>
+    // Slideshow
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
 
-<script>
-  let slideIndex = 0;
-  const slides = document.querySelectorAll(".slide");
-
-  function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove("active"));
-
-    if (index >= slides.length) {
-      slideIndex = 0;
-    } else if (index < 0) {
-      slideIndex = slides.length - 1;
-    } else {
-      slideIndex = index;
+    function showSlide(index) {
+      slides.forEach(s => s.classList.remove("active"));
+      slideIndex = (index + slides.length) % slides.length;
+      slides[slideIndex].classList.add("active");
     }
 
-    slides[slideIndex].classList.add("active");
-  }
+    function changeSlide(n) {
+      showSlide(slideIndex + n);
+    }
 
-  function changeSlide(step) {
-    showSlide(slideIndex + step);
-  }
+    showSlide(0);
+    setInterval(() => changeSlide(1), 3000);
 
-  setInterval(() => {
-    changeSlide(1);
-  }, 3000);
-</script>
+    // Countdown (UPDATED DATE)
+    const weddingDate = new Date("2027-09-22T00:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const gap = weddingDate - now;
+
+      const days = Math.floor(gap / (1000*60*60*24));
+      const hours = Math.floor((gap / (1000*60*60)) % 24);
+      const minutes = Math.floor((gap / (1000*60)) % 60);
+      const seconds = Math.floor((gap / 1000) % 60);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
 
 </body>
 </html>
