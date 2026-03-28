@@ -7,11 +7,21 @@
 
   <style>
     body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background: linear-gradient(to bottom, #fff8ec, #f5e6c8);
-      color: #4b3a2f;
-      text-align: center;
+  margin: 0;
+  font-family: Georgia, serif;
+  text-align: center;
+  color: #3e2f1c;
+
+  background: linear-gradient(
+    to bottom,
+    #fff8cc,
+    #ffe066,
+    #f4c430,
+    #c99700,
+    #6b8e23
+  );
+
+  background-attachment: fixed;
     }
 
     h1 {
@@ -28,9 +38,13 @@
       max-width: 900px;
       margin: 30px auto;
       padding: 20px;
-      background: rgba(255,255,255,0.9);
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  
+      background: rgba(255, 255, 255, 0.85);
+  
+      border: 3px solid #f4c430;
+      border-radius: 20px;
+  
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
     .video iframe {
@@ -48,25 +62,39 @@
       margin-top: 20px;
       flex-wrap: wrap;
     }
-
     .box {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      min-width: 80px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        background: #fff4b3;
+        padding: 15px;
+        border-radius: 15px;
+        min-width: 80px;
+      
+        border: 2px solid #f4c430;
+      
+        box-shadow: 0 5px 12px rgba(0,0,0,0.2);
     }
 
-    .number {
-      font-size: 1.8rem;
-      font-weight: bold;
-    }
+.number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #8b6508;
+        }
+    
+
+    
 
     /* Slideshow */
     .slideshow-container {
       position: relative;
       max-width: 700px;
       margin: auto;
+
+      border: 6px solid #f4c430;
+      border-radius: 20px;
+
+      background: white;
+      padding: 10px;
+
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
     .slide {
