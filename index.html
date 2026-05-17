@@ -104,12 +104,6 @@
       animation: sectionFade 1.2s ease;
     }
 
-    .sunflower-row {
-      font-size: 1.8rem;
-      letter-spacing: 8px;
-      margin-bottom: 12px;
-    }
-
     h1 {
       margin: 0;
       font-family: "Great Vibes", cursive;
@@ -424,6 +418,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="petals">
@@ -465,7 +460,7 @@
     <!-- Countdown -->
     <div class="section">
       <h2>Countdown to Our Wedding</h2>
-      <p class="countdown-title">Counting down to September 22, 2027</p>
+      <p class="countdown-title">Counting down to September 25, 2027</p>
 
       <div class="countdown">
         <div class="box">
@@ -574,24 +569,23 @@
       <h2>Share a Memory</h2>
       <p class="section-intro">Leave a short story, message, or note for the couple.</p>
 
-      <!-- 
-        GitHub Pages cannot save comments by itself.
-        To make this work, create a free form at Formspree
-        and replace YOUR_FORM_ID with your real Formspree form ID.
-      -->
-
-      <form class="memory-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="memory-form" action="https://formspree.io/f/xredzjve" method="POST">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required>
 
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
         <label for="message">Your Message or Memory</label>
-        <textarea id="message" name="message" placeholder="Write a short story, memory, or message..." required></textarea>
+        <textarea id="message" name="message" placeholder="Write a short story, memory, or message for the couple..." required></textarea>
+
+        <input type="hidden" name="_subject" value="New memory submitted for Darius & Tyler">
 
         <button type="submit">Send Memory</button>
       </form>
 
       <p class="form-note">
-        This form will work after you replace <strong>YOUR_FORM_ID</strong> with your real Formspree link.
+        Thank you for sharing a memory, message, or blessing for the couple.
       </p>
     </div>
 
@@ -613,8 +607,8 @@
       "Therefore what God has joined together, let no one separate - Mark 10:9",
       "Growing together with love and joy.",
       "Do everything in love - 1 Corinthians 16:14",
-      "A love that blooms in every season.",
       "But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control - Galatians 5:22-23",
+      "A love that blooms in every season.",
       "The kind of love that always finds its way back.",
       "I passed them when I found him whom my soul loves. I held him, and would not let him go - Song of Solomon 3:4.",
       "Sweet memories made one day at a time.",
@@ -637,7 +631,7 @@
     setInterval(() => changeSlide(1), 4000);
 
     // Countdown
-    const weddingDate = new Date("2027-09-22T00:00:00").getTime();
+    const weddingDate = new Date("2027-09-25T00:00:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();
